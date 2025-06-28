@@ -516,7 +516,7 @@ padding-bottom: 2rem;
 
 
 
-/* .services__card:first-child {
+.services__card:first-child {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/Images/Softwear.jpg');
 }
 .services__card:nth-child(2) {
@@ -534,7 +534,7 @@ padding-bottom: 2rem;
 }
 .services__card:nth-child(6) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/Images/Hack.jpg');
-} */
+}
 .services__card:hover {
     transform: scale(1.075);
     cursor: pointer;
@@ -1354,4 +1354,94 @@ section {
 }
 #TopS {
     text-decoration: none;
+}
+Project
+.projects-section {
+  padding: 60px 20px;
+  background: #131313;
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #222;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #444;
+  text-decoration: none;
+}
+
+/* Reszponzív stílus kisebb kijelzőkre */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
 }
