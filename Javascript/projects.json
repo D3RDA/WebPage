@@ -1,9 +1,11 @@
 [
     {
-        "name": "TesztProjekt",
+        "name": "Character Battle – WPF Game with Web API",
         "url": "https://google.hu",
-        "description": "VALAMIDXFYDXFYDXFYXDFYXD",
-        "icon": "\uD83D\uDEAC "
+        "description": "A simple WPF application where ",
+        "screenshot": "Images/Cloud.jpg",
+        "icon": ""
+
     },
     {
         "name": "TesztProjekt",
@@ -11,7 +13,7 @@
         "description": "VALAMIDXFYDXFYDXFYXDFYXD",
         "icon": "\uD83D\uDEAC "
     },
-    {
+     {
         "name": "TesztProjekt",
         "url": "https://google.hu",
         "description": "VALAMIDXFYDXFYDXFYXDFYXD",
