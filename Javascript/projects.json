@@ -5,12 +5,12 @@
         "description": "A simple WPF application where ",
         "screenshot": "Images/Cloud.jpg",
         "icon": ""
-
     },
     {
         "name": "TesztProjekt",
         "url": "https://google.hu",
         "description": "VALAMIDXFYDXFYDXFYXDFYXD",
+        "screenshot": "Images/Cybersecurity.jpg",
         "icon": "\uD83D\uDEAC "
     },
      {
@@ -24,5 +24,29 @@
         "url": "https://google.hu",
         "description": "VALAMIDXFYDXFYDXFYXDFYXD",
         "icon": "\uD83D\uDEAC "
-    }
+    },
+  {
+    "name": "TesztProjekt",
+    "url": "https://google.hu",
+    "description": "VALAMIDXFYDXFYDXFYXDFYXD",
+    "icon": "\uD83D\uDEAC "
+  },
+  {
+    "name": "TesztProjekt",
+    "url": "https://google.hu",
+    "description": "VALAMIDXFYDXFYDXFYXDFYXD",
+    "icon": "\uD83D\uDEAC "
+  },
+  {
+    "name": "TesztProjekt",
+    "url": "https://google.hu",
+    "description": "VALAMIDXFYDXFYDXFYXDFYXD",
+    "icon": "\uD83D\uDEAC "
+  },
+  {
+    "name": "TesztProjekt",
+    "url": "https://google.hu",
+    "description": "VALAMIDXFYDXFYDXFYXDFYXD",
+    "icon": "\uD83D\uDEAC "
+  }
 ]
