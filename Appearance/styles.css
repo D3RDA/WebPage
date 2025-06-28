@@ -447,25 +447,27 @@ padding-bottom: 2rem;
 
 .services__container {
     display: flex;
-    justify-content: space-evenly; /* Itt egyenletes távolságot biztosítunk */
-    flex-wrap: wrap;  /* Rugalmas elrendezés, amely a kártyákat egymás mellé rendezi */
-    gap: 1rem; /* Kisebb távolság a kártyák között */
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
+
 .services__card {
+    width: 350px;
+    height: 525px;
     margin: 1rem;
-    height: 205px;
-    width: 150px;
     border-radius: 4px;
     background-size: cover;
+    background-position: center;
+    color: #fff;
     position: relative;
-    color: #ffff;
-    box-sizing: border-box;
-    transition: transform 0.2s ease-in; /* Animáció hozzáadása a hover hatáshoz */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    transition: transform 0.2s ease-in;
 }
 .services__card {
     position: relative;
