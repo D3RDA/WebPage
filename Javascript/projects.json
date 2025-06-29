@@ -1,17 +1,17 @@
 [
     {
         "name": "Character Battle – WPF Game with Web API",
-        "url": "https://google.hu",
+        "url": "https://github.com/D3RDA/Jatek-WEBAPI-WPF.git",
         "description": "A simple WPF application where ",
-        "screenshot": "Images/Cloud.jpg",
+        "screenshot": "Images/Fight.jpg",
         "icon": ""
     },
     {
-        "name": "TesztProjekt",
-        "url": "https://google.hu",
+        "name": "Survey",
+        "url": "https://github.com/D3RDA/Kerdoiv.git",
         "description": "VALAMIDXFYDXFYDXFYXDFYXD",
-        "screenshot": "Images/Cybersecurity.jpg",
-        "icon": "\uD83D\uDEAC "
+        "screenshot": "Images/Kerdoiv.JPG",
+        "icon": ""
     },
      {
         "name": "TesztProjekt",
