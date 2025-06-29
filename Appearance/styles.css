@@ -4,6 +4,13 @@
 	padding: 0;
 	font-family: "Kumbh Sans", sans-serif;
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .navbar
 {
     background: #131313;
@@ -12,9 +19,10 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 999;
+    width: 100%;
+    z-index: 1000;
     
 }
 .navbar__container {
@@ -450,9 +458,9 @@ padding-bottom: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    
+    
 }
-
-
 .services__card {
     width: 350px;
     height: 525px;
@@ -472,6 +480,7 @@ padding-bottom: 2rem;
 .services__card {
     position: relative;
     overflow: hidden; /* fontos! */
+    
 }
 
 /* Átlátszó sötét réteg hoverre */
@@ -570,7 +579,7 @@ padding-bottom: 2rem;
         height:27rem;
     }
     .services h1 {
-        font-size: 1rem;
+        font-size: 4rem;
     }
     .services__card span {
         font-size: 1.2rem;
@@ -1261,14 +1270,12 @@ section {
     .info-text {
         text-align: center;
     }
+    .info-image {
+    display: flex;
+    justify-content: center;
+  }
 
-    .info-image img {
-        width: 80%; /* Szélesebb képek a kisebb képernyőkön */
-        max-width: 250px;
-        margin-top: 0rem; /* Csökkentett távolság */
-    }
 }
-
 /* 480px alatt - mobiltelefonok */
 @media (max-width: 480px) {
     .intro-container h1 {
@@ -1351,4 +1358,59 @@ section {
     align-items: center;
     width: 100%;
     
+}
+.services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+/* Nagy képernyő (pl. desktop, nagy laptop) — 4 oszlop */
+@media screen and (min-width: 1300px) {
+    .services__card {
+        width: calc((100% / 4) - 2rem); /* 4 kártya + margó */
+        max-width: none; /* max szélesség levéve, hogy kitöltse */
+    }
+}
+
+/* Közepes képernyő (közepes laptop) — 3 oszlop */
+@media screen and (min-width: 900px) and (max-width: 1299px) {
+    .services__card {
+        width: calc((100% / 3) - 2rem); /* 3 kártya + margó */
+        max-width: none;
+    }
+}
+
+/* Kis laptop, nagy tablet — 2 oszlop */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    .services__card {
+        width: calc((100% / 2) - 2rem); /* 2 kártya + margó */
+        max-width: none;
+    }
+}
+
+/* Mobil — 1 oszlop */
+@media screen and (max-width: 599px) {
+    .services__card {
+        width: 100%;
+        max-width: none;
+        height: 25rem; /* mobilra kisebb magasság */
+    }
+    body, html {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .main__container {
+    padding: 1rem;
+  }
+
+  .button {
+    width: 65%; /* hogy a gomb ne legyen túl széles */
+    margin: 0 auto; /* középre */
+  }
 }
