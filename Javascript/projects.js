@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 card.innerHTML = `
                     <h3 class="card-title">${project.icon} ${project.name}</h3>
                     <div class="card-overlay">
-                        <a href="${project.url}" target="_blank">Tovább</a>
+                        <a href="${project.url}" target="_blank">Continue</a>
                     </div>
                 `;
 

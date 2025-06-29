@@ -4,6 +4,13 @@
 	padding: 0;
 	font-family: "Kumbh Sans", sans-serif;
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .navbar
 {
     background: #131313;
@@ -12,9 +19,10 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 999;
+    width: 100%;
+    z-index: 1000;
     
 }
 .navbar__container {
@@ -437,8 +445,8 @@ padding-bottom: 2rem;
     background-color: #ff8177;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     background-size: 100%;
-    margin-bottom: 12rem;
-    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-size: 4.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -450,9 +458,9 @@ padding-bottom: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    
+    
 }
-
-
 .services__card {
     width: 350px;
     height: 525px;
@@ -472,6 +480,7 @@ padding-bottom: 2rem;
 .services__card {
     position: relative;
     overflow: hidden; /* fontos! */
+    
 }
 
 /* Átlátszó sötét réteg hoverre */
@@ -513,28 +522,6 @@ padding-bottom: 2rem;
     border-radius: 0.5rem;
     transition: background-color 0.3s ease;
 }
-
-
-
-.services__card:first-child {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/Images/Softwear.jpg');
-}
-.services__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/Images/Cybersecurity.jpg');
-}
-.services__card:nth-child(3) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/Images/web.jpg');
-}
-.services__card:nth-child(4) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/Images/Cloud.jpg');
-}
-.services__card:nth-child(5) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/Images/Network.jpg');
-    
-}
-.services__card:nth-child(6) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/Images/Hack.jpg');
-}
 .services__card:hover {
     transform: scale(1.075);
     cursor: pointer;
@@ -571,6 +558,7 @@ padding-bottom: 2rem;
 /* Mobile Responsive */
 
 @media screen and (max-width: 1300px) {
+    
     .services {
         height: auto;
         
@@ -581,7 +569,7 @@ padding-bottom: 2rem;
     }
 
     .services h1 {
-        font-size: 1.8rem;
+        font-size: 3.8rem;
     }
 }
 
@@ -591,7 +579,7 @@ padding-bottom: 2rem;
         height:27rem;
     }
     .services h1 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .services__card span {
         font-size: 1.2rem;
@@ -655,8 +643,8 @@ padding-bottom: 2rem;
     font-size: 24px;
 }
 .social__media {
-    max-width: 1000px;
-    width: 100%;
+    max-width: 1300px;
+    width: 200%;
 }
 .social__media--wrap {
     max-width: 1000px;
@@ -1282,14 +1270,12 @@ section {
     .info-text {
         text-align: center;
     }
+    .info-image {
+    display: flex;
+    justify-content: center;
+  }
 
-    .info-image img {
-        width: 80%; /* Szélesebb képek a kisebb képernyőkön */
-        max-width: 250px;
-        margin-top: 0rem; /* Csökkentett távolság */
-    }
 }
-
 /* 480px alatt - mobiltelefonok */
 @media (max-width: 480px) {
     .intro-container h1 {
@@ -1355,93 +1341,76 @@ section {
 #TopS {
     text-decoration: none;
 }
-Project
-.projects-section {
-  padding: 60px 20px;
-  background: #131313;
-  text-align: center;
-  font-family: 'Kumbh Sans', sans-serif;
+.card-title
+{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.social__icons__top
+{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+}
+.services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #fff;
+
+
+/* Nagy képernyő (pl. desktop, nagy laptop) — 4 oszlop */
+@media screen and (min-width: 1300px) {
+    .services__card {
+        width: calc((100% / 4) - 2rem); /* 4 kártya + margó */
+        max-width: none; /* max szélesség levéve, hogy kitöltse */
+    }
 }
 
-.projects-container {
-  max-width: 1200px;
-  margin: 0 auto;
+/* Közepes képernyő (közepes laptop) — 3 oszlop */
+@media screen and (min-width: 900px) and (max-width: 1299px) {
+    .services__card {
+        width: calc((100% / 3) - 2rem); /* 3 kártya + margó */
+        max-width: none;
+    }
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  justify-items: center;
+/* Kis laptop, nagy tablet — 2 oszlop */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    .services__card {
+        width: calc((100% / 2) - 2rem); /* 2 kártya + margó */
+        max-width: none;
+    }
 }
 
-.project-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-  max-width: 400px;
-  width: 100%;
+/* Mobil — 1 oszlop */
+@media screen and (max-width: 599px) {
+    .services__card {
+        width: 100%;
+        max-width: none;
+        height: 25rem; /* mobilra kisebb magasság */
+    }
+    body, html {
+    overflow-x: hidden;
+  }
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-
-}
-
-.project-card h3 {
-  font-size: 1.5rem;
-  color: #222;
-}
-
-.project-card p {
-  font-size: 1rem;
-  color: #555;
-  margin: 10px 0;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #222;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.project-card a:hover {
-  background-color: #444;
-  text-decoration: none;
-}
-
-/* Reszponzív stílus kisebb kijelzőkre */
 @media (max-width: 600px) {
-  .section-title {
-    font-size: 2rem;
+  .main__container {
+    padding: 1rem;
   }
 
-  .project-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .project-card p {
-    font-size: 0.95rem;
+  .button {
+    width: 65%; /* hogy a gomb ne legyen túl széles */
+    margin: 0 auto; /* középre */
   }
 }
