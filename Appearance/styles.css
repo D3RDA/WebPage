@@ -36,7 +36,6 @@
     padding: 0 50px;
 }
 #navbar__logo{
-    text-shadow: 2px 5px 4 vpx red;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
@@ -441,7 +440,8 @@ padding-bottom: 2rem;
     
 }
 
-.services h1 {
+#services_name {
+    text-align: center;
     background-color: #ff8177;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     background-size: 100%;
@@ -851,7 +851,7 @@ padding-bottom: 2rem;
     position: absolute;
     width: 5px;
     height: 100%;
-    background-color: #21d4fd;
+    background-color: #b12a5b;
     left: calc(50% - 1px);
 }
 #RightBit {
@@ -904,17 +904,17 @@ padding-bottom: 2rem;
 /* Timeline Content */
 .timeline-content {
     background-color: #131313;
-    border: 3px solid #4837ff;
+    border: 3px solid #ff0844;
     padding: 30px 50px;
     border-radius: 4rem;
-    box-shadow: 0 0 10px #4837ff;
+    box-shadow: 0 0 10px #f77062;
     cursor: pointer;
-    transition: 0.3 ease-in-out;
+   
 }
 
 .timeline-content:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px #4837ff;
+    box-shadow: 0 0 25px #ff0844;
 }
 
 .timeline-content h3 {
@@ -1168,7 +1168,7 @@ body {
 }
 
 /* Fejléc stílusok */
-.intro-container h1 {
+.intro-container h2 {
     text-align: center;
     color: #fff;
     font-size: 2.5rem;
