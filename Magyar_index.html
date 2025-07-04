@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,13 +9,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+        <script src="../../../Javascript/projects.js" defer></script>
 	</head>
 	<body>
         <script src="https://kit.fontawesome.com/02e9747ef6.js" crossorigin="anonymous"></script>
         <!-- Navbar Section -->
 <nav class="navbar">
   <div class="navbar__container">
-    <a href="/" id="navbar__logo"> <i class="fa fa-code" > DERDA <i class="fas fa-code"></i></i>  </a>
+    <a href="/Magyar_index.html" id="navbar__logo"> <i class="fa fa-code" > DERDA <i class="fas fa-code"></i></i>  </a>
     <div class="navbar__toggle" id="mobile-menu">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -23,7 +24,7 @@
     </div>
     <ul class="navbar__menu">
       <li class="navbar__item">
-        <a href="/Core/Lang/Lang/HU/Magyar_index.html" class="navbar__links">Főoldal</a>
+        <a href="/Magyar_index.html" class="navbar__links">Főoldal</a>
       </li>
       <li class="navbar__item">
         <a href="#Motiváció" class="navbar__links">Motiváció</a>
@@ -52,6 +53,20 @@
                 <h1>Hello, Itt <span>Dominik</span></h1>
                 <h2 class="text-animation"><div>Amivel foglalkozom: </div> <span></span></h2>
                 <a id="TopS" href="#services"><p class="button">Projektek</p></a>
+                   <div class="social__icons__top">
+                <a href="https://www.facebook.com/profile.php?id=100008082975027" class="social__icon--link" target="_blank">
+                    <i class="fab fa-facebook  fa-2x"></i>
+                </a>
+                <a href="mailto:MRD3RDA@gmail.com" class="social__icon--link" target="_blank" aria-label="Email">
+                  <i class="fas fa-envelope fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dominik-derda-6422a7349/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/D3RDA" class="social__icon--link" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
                 </div>
                 <div class="main__img--container">
                     <img src="/Images/pic1.jpg" alt="pic" id="main__img">
@@ -127,7 +142,7 @@ Jelenleg szoftverfejlesztést és tesztelést tanulok felnőttképzés keretébe
     <!-- CV -->
     <div id="Önéletrajz"></div>
     <div class="cv-wrapper">
-    <h1 id="full-name">Dominik Derda <span><a href="/Documents/Derda%20Dominik.pdf"><i class="fas fa-download"></i></a></span></h1>
+    <h1 id="full-name">Dominik Derda <span><a href="/Docs/Derda Dominik.pdf"><i class="fas fa-download"></i></a></span></h1>
     
     
 
@@ -205,56 +220,23 @@ Jelenleg szoftverfejlesztést és tesztelést tanulok felnőttképzés keretébe
 
         
             
-  <div id="services"></div>
+   <div id="services"></div>
 <div class="services">
-  <h1>Szakmai területeim</h1>
-<div class="services__container">
-  
-<div class="services__card" onclick="window.open('Carrier/Software.html', 'target:blank')" >
-  <h2>Szoftverfejlesztés</h2>
-  <div class="card-overlay">
-    <span>Tovább</span>
-  </div>
-</div>
+  <h1>Projects</h1>
+   <section id="services" class="projects-section">
+            <div class="projects-container">
+                <div class="project-grid">
 
-  <div class="services__card" onclick="window.open('Carrier/Cybersecurity.html', 'target:blank')">
-    <h2>Kiberbiztonság</h2>
-    <div class="card-overlay">
-      <span>Tovább</span>
-    </div>
-  </div>
+                    <!-- Projektek megjelenítése -->
+                    <div class="container mt-5">
+                        <br>
+                        <div id="projects-container" class="d-flex flex-wrap justify-content-center gap-3"></div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="services__card" onclick="window.open('Carrier/Web.html', 'target:blank')">
-  <h2>Webfejlesztés</h2>
-  <div class="card-overlay">
-    <span>Tovább</span>
-  </div>
-</div>
-
-<div class="services__card" onclick="window.open('Carrier/Cloud.html', 'target:blank')">
-  <h2>Programozás</h2>
-  <div class="card-overlay">
-    <span>Tovább</span>
-  </div>
-</div>
-
-<div class="services__card" onclick="window.open('Carrier/Networking.html', 'target:blank')">
-  <h2>Hálózatok</h2>
-  <div class="card-overlay">
-    <span>Tovább</span>
-  </div>
-</div>
-
-<div class="services__card" onclick="window.open('Carrier/Ethical.html', 'target:blank')">
-  <h2>Etikus Hackelés</h2>
-  <div class="card-overlay">
-    <span>Tovább</span>
-  </div>
-</div>
-
-    </div>
-  </div>
-</section>
 <!-- Contact -->
 
 
@@ -290,7 +272,7 @@ Jelenleg szoftverfejlesztést és tesztelést tanulok felnőttképzés keretébe
     <div class="social__media">
         <div class="social__media--wrap">
             <div class="footer__logo">
-                <a href="/index.html" id="footer__logo"><i class="fas fa-code"></i>DERDA</a>
+                <a href="/Magyar_index.html" id="footer__logo"><i class="fas fa-code"></i>DERDA</a>
             </div>
             <p class="website__rights">© Derda Dominik | Minden jog fenntartva.
             </p>
