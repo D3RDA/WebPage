@@ -3,7 +3,7 @@
         "name": "Character Battle – WPF Game with Web API",
         "url": "https://github.com/D3RDA/Jatek-WEBAPI-WPF.git",
         "description": "A simple WPF application where ",
-        "screenshot": "Images/Fight.jpg",
+        "screenshot": "Images/Fight.JPG",
         "icon": ""
     },
     {
@@ -17,28 +17,28 @@
         "name": "Coming soon",
         "url": "",
         "description": "VALAMIDXFYDXFYDXFYXDFYXD",
-        "screenshot": "Images/WaitForit.png",
+        "screenshot": "Images/Wait.PNG",
         "icon": " "
     },
     {
         "name": "Coming soon",
         "url": "",
         "description": "VALAMIDXFYDXFYDXFYXDFYXD",
-        "screenshot": "Images/WaitForit.png",
+        "screenshot": "Images/Wait.png",
         "icon": ""
     },
   {
     "name": "Coming soon",
     "url": "",
     "description": "VALAMIDXFYDXFYDXFYXDFYXD",
-    "screenshot": "Images/WaitForit.png",
+    "screenshot": "Images/Wait.png",
     "icon": ""
   },
   {
     "name": "Coming soon",
     "url": "",
     "description": "VALAMIDXFYDXFYDXFYXDFYXD",
-    "screenshot": "Images/WaitForit.png",
+    "screenshot": "Images/Wait.png",
     "icon": ""
   }
 ]
