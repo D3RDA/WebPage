@@ -14,27 +14,31 @@
         "icon": ""
     },
      {
-        "name": "TesztProjekt",
-        "url": "https://google.hu",
+        "name": "Coming soon",
+        "url": "",
         "description": "VALAMIDXFYDXFYDXFYXDFYXD",
+        "screenshot": "Images/WaitForit.png",
         "icon": " "
     },
     {
-        "name": "TesztProjekt",
-        "url": "https://google.hu",
+        "name": "Coming soon",
+        "url": "",
         "description": "VALAMIDXFYDXFYDXFYXDFYXD",
+        "screenshot": "Images/WaitForit.png",
         "icon": ""
     },
   {
-    "name": "TesztProjekt",
-    "url": "https://google.hu",
+    "name": "Coming soon",
+    "url": "",
     "description": "VALAMIDXFYDXFYDXFYXDFYXD",
+    "screenshot": "Images/WaitForit.png",
     "icon": ""
   },
   {
-    "name": "TesztProjekt",
-    "url": "https://google.hu",
+    "name": "Coming soon",
+    "url": "",
     "description": "VALAMIDXFYDXFYDXFYXDFYXD",
+    "screenshot": "Images/WaitForit.png",
     "icon": ""
   }
 ]
