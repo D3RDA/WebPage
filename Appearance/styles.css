@@ -373,6 +373,22 @@ padding-bottom: 2rem;
         width: calc(100% + 8px);
     }
 }
+@media screen and (max-width: 1930px) { 
+    .main__container {
+       height: 70vh;  
+    }
+    .main__img--container {
+    text-align: center;
+
+}
+#main__img {
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+}
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
     .main__container {
@@ -811,7 +827,7 @@ padding-bottom: 2rem;
 /* Time Line */
 /* Alap stílusok - heading */
 .heading {
-    font-size: 8rem;
+    font-size: 6rem;
     text-align: center;
     margin: 5rem 0;
 }
@@ -931,6 +947,7 @@ padding-bottom: 2rem;
     line-height: 22px;
 }
 
+
 /* Média lekérdezés kisebb képernyőkhöz */
 @media(max-width: 991px) {
     .heading {
@@ -994,6 +1011,31 @@ padding-bottom: 2rem;
         font-size: 14px; /* Csökkentett méret */
     }
 }
+@media(max-width: 1930px) {
+    .heading {
+        font-size: 4rem; /* További csökkentés */
+    }
+
+    .education h2 {
+        font-size: 2rem; /* Még kisebb betűméret */
+    }
+
+    .timeline-items {
+        margin-bottom: 5rem;
+    }
+
+    .timeline-content {
+        padding: 20px 30px; /* Kisebb padding mobilon */
+    }
+
+    .timeline-content h3 {
+        font-size: 18px; /* Csökkentett méret */
+    }
+
+    .timeline-content p {
+        font-size: 13px; /* Csökkentett méret */
+    }
+}
 
 /* CV */
 /* Alapstílusok */
@@ -1055,8 +1097,27 @@ body {
   .skills-list li {
     margin-bottom: 0.5rem;
   }
+  @media (max-width: 1930px) {
+    .cv-wrapper {
+      padding: 1.5rem;
+      max-width: 50%;
+      max-height: 50%;
+    }
   
+    #full-name {
+      font-size: 2.5rem;
+    }
+  
+    .heading-title {
+      font-size: 1.25rem;
+    }
+  
+    ul li {
+      font-size: 0.8rem;
+    }
+  }
   /* Kisebb képernyők (pl. tablet) */
+
   @media (max-width: 768px) {
     .cv-wrapper {
       padding: 1.5rem;
@@ -1249,16 +1310,24 @@ section {
     margin-top: 1px;
 }
 
-/* Média lekérdezések - reszponzivitás */
-
-/* 768px alatt - mobil és táblagépek */
-@media (max-width: 768px) {
+@media (max-width: 1930px) {
     .intro-container h1 {
-        font-size: 2rem; /* Csökkentett betűméret */
+        font-size: 1rem; /* Csökkentett betűméret */
     }
 
     .intro-container p {
+        font-size: 0.7rem; /* Csökkentett betűméret */
+    }
+
+}
+/* 768px alatt - mobil és táblagépek */
+@media (max-width: 768px) {
+    .intro-container h1 {
         font-size: 1rem; /* Csökkentett betűméret */
+    }
+
+    .intro-container p {
+        font-size: 0.8rem; /* Csökkentett betűméret */
     }
 
     .personal-info-container {
