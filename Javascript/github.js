@@ -45,11 +45,15 @@ function sortRepos(property, order, text) {
         let valueA = a[property];
         let valueB = b[property];
 
-        // Ha dátumot rendezünk, akkor időbélyegként hasonlítjuk össze
-        if (property === "created" || property === "updated") {
-            // A pushed_at mezőt használjuk a legutolsó módosításra
-            valueA = new Date(a.pushed_at).getTime(); // Használjuk a pushed_at mezőt
-            valueB = new Date(b.pushed_at).getTime(); // Használjuk a pushed_at mezőt
+        // Ha dátumot rendezünk, akkor a megfelelő időbélyeggel hasonlítjuk össze
+        if (property === "created") {
+            // Létrehozás dátuma szerinti rendezés
+            valueA = new Date(a.created_at).getTime();
+            valueB = new Date(b.created_at).getTime();
+        } else if (property === "updated") {
+            // Utolsó módosítás dátuma szerinti rendezés
+            valueA = new Date(a.pushed_at).getTime();
+            valueB = new Date(b.pushed_at).getTime();
         } else {
             valueA = valueA.toLowerCase();
             valueB = valueB.toLowerCase();
